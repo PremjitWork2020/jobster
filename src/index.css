@@ -223,6 +223,8 @@ ul {
   display: block;
   font-size: var(--smallText);
   margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--grey-600);
   text-transform: capitalize;
   letter-spacing: var(--letterSpacing);
 }
