@@ -1,15 +1,9 @@
 import Wrapper from '../assets/wrappers/BigSidebar';
-import { useSelector, useDispatch } from 'react-redux';
-import { toggleSidebar } from '../features/user/userSlice';
+import { useSelector } from 'react-redux';
 import Logo from './Logo';
 import NavLinks from './NavLinks';
 const BigSidebar = () => {
   const { isSidebarOpen } = useSelector((store) => store.user);
-  const dispatch = useDispatch();
-
-  const toggle = () => {
-    dispatch(toggleSidebar());
-  };
   return (
     <Wrapper>
       <div
