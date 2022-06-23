@@ -1,18 +1,7 @@
-import { useState } from 'react';
 import Wrapper from '../assets/wrappers/SearchContainer';
 import { FormRow, FormRowSelect } from '../components';
 import { useSelector, useDispatch } from 'react-redux';
 import { handleChange, clearFilters } from '../features/allJobs/allJobsSlice';
-
-const initialValues = {
-  search: '',
-  jobTypeOptions: ['all', 'full-time', 'part-time', 'remote', 'internship'],
-  jobType: 'all',
-  statusOptions: ['all', 'interview', 'declined', 'pending'],
-  status: 'all',
-  sortOptions: ['latest', 'oldest', 'a-z', 'z-a'],
-  sort: 'latest',
-};
 
 const SearchContainer = () => {
   const { isLoading, search, searchStatus, searchType, sort, sortOptions } =

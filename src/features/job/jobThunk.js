@@ -1,4 +1,3 @@
-import authHeader from '../../utils/authHeader';
 import customFetch, { checkForUnauthorizedResponse } from '../../utils/axios';
 import { clearValues } from './jobSlice';
 import { showLoading, hideLoading, getAllJobs } from '../allJobs/allJobsSlice';
