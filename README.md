@@ -3220,7 +3220,7 @@ const handleSearch = (e) => {
 ```js
 import customFetch from '../../utils/axios';
 
-export const getAllJobsThunk = async (thunkAPI) => {
+export const getAllJobsThunk = async (_, thunkAPI) => {
   const { page, search, searchStatus, searchType, sort } =
     thunkAPI.getState().allJobs;
 
